@@ -4,7 +4,7 @@ This write-up demonstrates simulating and detecting brute force attacks on a Lin
 
 A Sentinel Analytics Rule detects the attack and generates an alert, while a Playbook is used to automate response actions in line with **NIST 800-61**. The VM’s network security group (NSG) is initially configured as open, making the VM accessible from the public internet for attack simulation
 
-![CyberLab Linux Brute Force](/images/CyberLab Linux Brute Force.jpg)
+![CyberLab Linux Brute Force](/images/CyberLab%20Linux%20Brute%20Force.jpg)
 ## Simulating the Brute Force Success and Triggering the Analytics Rule
 The following PowerShell script simulates a successful brute force attack against the Linux VM, triggering the Sentinel analytics rule:
 ```powershell
@@ -177,4 +177,4 @@ After applying these remediations, re-running the **PowerShell brute-force simul
 🔸 **Enhancing Detection & Threat Intelligence** – Strengthening detection rules and integrating **threat intelligence feeds** could help **preempt future attacks**.  
 🔸 **Expanding Playbook Automation** – Automating NSG rule creation to block attacker IPs, moving affected machines to a quarantine network, or resetting user passwords would improve response time.
 
-Further hardening the environment as outlined in the **[Azure Honeynet SIEM Project]()** can improve security and mitigate similar attacks in the future.
+Further hardening the environment as outlined in the **[Azure Honeynet SIEM Project](https://github.com/Josh-Rap/Azure-Honeynet-SIEM-Project)** can improve security and mitigate similar attacks in the future.
